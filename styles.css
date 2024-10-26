@@ -1,0 +1,241 @@
+:root {
+    --primary-color: hsl(214, 84%, 56%);
+    --text-color: hsl(0, 0%, 31%);
+    --bg-color: hsl(0, 0%, 90%);
+    --bg-card-color: hsl(0, 0%, 98%);
+    --border-radius: 0.4em;
+    --transition: color 0.1s, background-color 0.2s ease-in-out;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+:root {
+    --transition: all 0.3s ease-in-out; /* Cambia el tiempo y el tipo según lo necesites */
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: var(--transition);
+    font-family: sans-serif;
+    padding: 0;
+}
+
+
+body.dark {
+    --text-color: hsl(0, 0%, 83%);
+    --bg-color: hsl(0, 0%, 15%);
+    --bg-card-color: hsl(0, 0%, 20%);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    padding: 0 1.5em;
+    background-color: var(--bg-card-color);
+    transition: background-color var(--transition); /* Usa la variable */
+}
+
+.switches {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toggle-theme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.toggle-theme__icon {
+    margin-right: 0.5em;
+    width: 20px;
+}
+
+.toggle-theme__text {
+    font-size: 0.8rem;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: var(--bg-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+h1 {
+    color: hsl(210, 50%, 60%);
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid hsl(210, 50%, 60%);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid hsl(210, 50%, 60%);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: hsl(210, 50%, 60%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color var(--transition);
+}
+
+button:hover {
+    background-color: #B6E1E7;
+}
+
+h2 {
+    margin-top: 20px;
+    color: hsl(210, 50%, 60%);
+}
+
+#outputText {
+    border: 2px solid hsl(210, 50%, 60%);
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--bg-color);
+    font-size: 16px;
+    min-height: 50px;
+    transition: color var(--transition); /* Usa la variable */
+}
+
+/* esto es para el logo  */
+
+.logo-footer img{
+    max-width: 100%;
+    height: 90px; 
+  }
+  .logo-footer {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si es necesario */
+    padding: 20px; /* Añade algo de espacio alrededor del logo */
+    background-color: var(--bg-color); /* Color de fondo opcional */
+}
+
+
+/* esto es para el footer  */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: var(--bg-color);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    transition: background-color var(--transition); /* Usa la variable */
+}
+.container-footer {
+    text-align: center;
+    width: 100%;
+    padding: 40px;
+    background:var(--bg-color);
+    margin-top: 40px;
+    position: relative;
+    bottom: 0;
+  }
+  
+  .container-footer footer {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .container-footer footer {
+    text-align: center;
+  }
+  
+  .container-footer footer {
+    width: 100px;
+  }
+  
+ 
+
+  .container-footer footer .redes-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .container-footer footer .redes-footer .icon-redes {
+    font-size: 30px;
+    margin: 20px;
+    background: #efefef;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #a2a2a2;
+    transition: background-color var(--transition); /* Usa la variable */
+  }
+  
+  footer .redes-footer .fa-linkedin-in:hover {
+    background: #0e76a8;
+    color: #fff;
+  }
+  
+  footer .redes-footer .fa-github:hover {
+    background: #000;
+    color: #fff;
+  }
+  
+  footer .redes-footer .fa-twitch:hover {
+    background: #6441a5;
+    color: #fff;
+  }
+  
+  .container-footer footer hr {
+    border: 1px solid #a2a2a2;
+  }
+  
+  .container-footer h4 {
+    text-align: center;
+    color: #a2a2a2;
+    margin-top: 20px;
+  }

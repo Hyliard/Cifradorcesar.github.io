@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado César</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="dark">
+    <header class="header">
+        <div class="switches">
+            <div id="toggle-theme" class="toggle-theme">
+                <img id="toggle-icon" src="assets/icons/moon.svg" alt="icon theme" class="toggle-theme__icon"/>
+                <p id="toggle-text" class="toggle-theme__text">Dark Mode</p>
+            </div>
+        </div> 
+        
+        <div id="toggle-colors" class="colors">
+            <div data-color="hsl(214, 84%, 56%)" class="colors__item colors__item--blue"></div>
+            <div data-color="hsl(150, 84%, 56%)" class="colors__item colors__item--green"></div>
+            <div data-color="hsl(276, 84%, 56%)" class="colors__item colors__item--purple"></div>
+            <div data-color="hsl(46, 84%, 56%)" class="colors__item colors__item--orange"></div>
+        </div>
+    </header>
+    <div class="container">
+        <h1>CifroCésar de Luis</h1>
+        <textarea id="inputText" placeholder="Ingresa el texto aquí..."></textarea>
+        <input type="number" id="shift" placeholder="Desplazamiento" min="1" max="25" value="3">
+        <button onclick="encrypt()">Cifrar</button>
+        <h2>Texto Cifrado:</h2>
+        <p id="outputText"></p>
+    </div>
+    <script src="scripts.js"></script>
+    
+    <div class="container-footer">
+        <div class="logo-footer">
+            <img src="assets/images/Gaming Logo.png" alt="" />
+        </div>
+        <footer>
+            <div class="redes-footer">
+                <a href="https://www.linkedin.com/in/luis-gerardo-martinez-03898582/" target="_blank"><i class="fab fa-linkedin-in icon-redes"></i></a>
+                <a href="https://github.com/Hyliard" target="_blank"><i class="fab fa-github icon-redes"></i></a>
+                <a href="https://www.twitch.tv/hyliard" target="_blank"><i class="fab fa-twitch icon-redes"></i></a>
+            </div>
+        </footer>
+        <p>© 2024 Hyliard. Todos los derechos reservados.</p>
+        <h4>Luis Gerardo Martinez Hernandez</h4>
+    </div>
+</body>
+
+</html>

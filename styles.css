@@ -143,6 +143,9 @@ h2 {
     min-height: 50px;
     transition: color var(--transition); /* Usa la variable */
 }
+#outputText {
+    user-select: text;
+}
 
 /* esto es para el logo  */
 
@@ -200,7 +203,7 @@ footer {
     justify-content: center;
     margin-top: 20px;
   }
-  
+  /* Este separa las redes y las hace grande   */
   .container-footer footer .redes-footer .icon-redes {
     font-size: 30px;
     margin: 20px;
@@ -214,7 +217,7 @@ footer {
     color: #a2a2a2;
     transition: background-color var(--transition); /* Usa la variable */
   }
-  
+  /* Este es para cuando pasas por el icono de cada uno   */
   footer .redes-footer .fa-linkedin-in:hover {
     background: #0e76a8;
     color: #fff;
